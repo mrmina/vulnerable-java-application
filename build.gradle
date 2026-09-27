@@ -23,6 +23,10 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
     compileOnly 'org.projectlombok:lombok:1.18.48'
     annotationProcessor 'org.projectlombok:lombok:1.18.48'
+
+    constraints {
+        implementation 'com.fasterxml.jackson.core:jackson-core:2.18.8'
+    }
 }
 
 tasks.named('test') {
